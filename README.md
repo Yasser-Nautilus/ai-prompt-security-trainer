@@ -144,8 +144,8 @@ It's the AI version of SQL Injection: untrusted input gets treated as *commands*
 flowchart LR
     A[Untrusted Text<br/>webpage / email / file] -->|contains hidden instruction| B[AI Model]
     B -->|obeys hidden instruction| C[Unwanted Action<br/>leak data / run command / etc.]
-    style A fill:#ffe0e0
-    style C fill:#ffcccc
+    style A fill:#ffcccc,color:#000000,stroke:#cc0000,stroke-width:2px
+    style C fill:#ffb3b3,color:#000000,stroke:#cc0000,stroke-width:2px
 ```
 
 ### 🧬 Types / variations
